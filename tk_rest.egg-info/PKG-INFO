@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tk-rest
+Version: 0.0.4
+Summary: Explore REST API in a heartbeat
+Home-page: https://github.com/qhuydtvt/tk-rest
+Author: TechKids Coding School
+Author-email: techkidsvn@gmail.com
+License: UNKNOWN
+Description: Explore REST API in a heartbeat
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
