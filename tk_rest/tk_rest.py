@@ -10,6 +10,12 @@ class TKEndPoint:
   def post(self, data):
     return requests.post(self.url, json=data)
 
+  def put(self, data):
+    return requests.put(self.url, json=data)
+
+  def delete(self, id):
+    return requests.delete(self.url + '/' + id)
+
 class TKRest:
   def __init__(self, url):
     self.url = url
