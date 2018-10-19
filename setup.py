@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="tk_rest",
-    version="0.0.4",
+    version="0.1.6",
     author="TechKids Coding School",
     author_email="techkidsvn@gmail.com",
     description="Explore REST API in a heartbeat",
