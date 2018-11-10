@@ -12,13 +12,13 @@ class TKEndPoint:
       return requests.get(self.url + "/" + id, headers)
 
   def post(self, data, headers=None):
-    return requests.post(self.url, json=data)
+    return requests.post(self.url, json=data, headers=headers)
 
-  def put(self, data):
-    return requests.put(self.url, json=data)
+  def put(self, data, headers=None):
+    return requests.put(self.url, json=data, headers=headers)
 
-  def delete(self, id):
-    return requests.delete(self.url + '/' + id)
+  def delete(self, id, headers=None):
+    return requests.delete(self.url + '/' + id, headers=headers)
 
 
 class TKRest:

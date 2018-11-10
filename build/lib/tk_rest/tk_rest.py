@@ -1,16 +1,17 @@
 import requests
 
+
 class TKEndPoint:
   def __init__(self, url, end_point):
     self.url = url + "/" + end_point
-  
-  def get(self, id=None, headers=None):
+
+  def get(self, id=None, headers=None, access_token=None):
     if id is None:
-      return requests.get(self.url, headers=headers)
+      return requests.get(self.url, headers)
     else:
-      return requests.get(self.url + "/" + id, headers=headers)
-  
-  def post(self, data):
+      return requests.get(self.url + "/" + id, headers)
+
+  def post(self, data, headers=None):
     return requests.post(self.url, json=data)
 
   def put(self, data):
@@ -18,6 +19,7 @@ class TKEndPoint:
 
   def delete(self, id):
     return requests.delete(self.url + '/' + id)
+
 
 class TKRest:
   def __init__(self, url):
